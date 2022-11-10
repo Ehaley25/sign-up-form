@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    font-size: 62.5%;
+    --root-position-left: 5%;
+    font-family: sans-serif;
+    --margin-top: 25%
+}
+body{
+    display: flex;
+    margin: 0;
+}
+.div-img-side{
+    background-image: url(leafs.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 40vw;
+}
+.div-img-side div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--margin-top);
+    border: 2px solid black;
+    color: white;
+    font-size: 2.9rem;
+    height: 15%;
+    background-color:rgba(0,0,0,0.5);
+}
+
+img[src = "odin.png"]{
+    width: min(80px,25%);
+}
+.form-side{
+    height: 100vh;
+    flex: 1;
+    background-color:#f9fafb;
+}
+.top-of-form{
+    max-width: 80%;
+    margin-top: var(--margin-top);
+    top: 20%;
+    margin-left: var(--root-position-left);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.holds-form{
+    background-color: #ffffff;
+    height: 22%;
+    padding-left: var(--root-position-left);
+    box-shadow: lightgray 1px 6px 10px;
+    margin-top: 5%;
+    padding-top: 2%;
+}
+.holds-form h3{
+    font-size: 2.0rem;
+    margin-bottom: 2%;
+}
+.divs-in-form{
+    display: flex;
+    column-gap: 10%;
+    margin-top: 1%;
+    font-size: 1.9rem;
+}
+.divs-in-form div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.divs-in-form input{
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1.5rem;
+}
+input:valid{
+    border: 1px solid green;
+}
+input:invalid{
+    border: 1px solid red;
+}
+input:required{
+    border: 1px solid red;
+}
+.account{
+    margin-left: var(--root-position-left);
+    margin-top: 2.5%;
+    font-size: 1.9rem;
+}
+.account button{
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.5rem;
+    background-color:#596D48 ;
+    box-shadow: lightgray 1px 6px 10px;
+    margin-bottom: 2%;
+}
+span{
+    color: #596D48;
+}
+@media screen and (max-width:500px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    :root{
+        --mobile-margin: 0;
+    }
+    body{
+        display: block;
+    }
+    .div-img-side{
+        display: flex;
+        align-items: center;
+        background-image: url(leafs.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        height: 20vh;
+        width: 100vw;
+    }
+    .div-img-side div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        border: none;
+        background: none;
+    }
+    img[src = "odin.png"]{
+        width: min(50px,25%);
+    }
+    .top-of-form{
+        padding: 15%;
+        width: auto;
+        margin-top: 0;
+        top: 0;
+        margin-left: 0;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    .form-side{
+        height: 100vh;
+        background-color:#f9fafb;
+    }
+    .holds-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ffffff;
+        height: auto;
+        padding-left: 0;
+        box-shadow: lightgray 1px 6px 10px;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .holds-form h3{
+        font-size: 2.0rem;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .divs-in-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+        column-gap: 10%;
+        margin-top: 1%;
+        font-size: 1.9rem;
+    }
+    .divs-in-form div{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .divs-in-form input{
+        border: 1px solid gray;
+        border-radius: 5px;
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .account{
+        margin-left: 0;
+        margin-top: 2.5%;
+        font-size: 1.9rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
